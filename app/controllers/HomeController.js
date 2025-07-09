@@ -1,8 +1,9 @@
 import Controller from "./Controller.js";
-
+import HomeModel from "../models/HomeModel.js";
 class HomeController extends Controller {
     constructor() {
         super();
+        this.model = new HomeModel();
         console.log("HomeController initialized");
     }
 

@@ -1,8 +1,9 @@
-import Controller from "./Controller.js";
-
-class EtudiantController extends Controller {
+import HomeController from "./HomeController.js";
+import EtudiantModel from "../models/EtudiantModel.js";
+class EtudiantController extends HomeController {
     constructor() {
         super();
+        this.model = new EtudiantModel();   
         console.log("EtudiantController initialized");
     }
 
