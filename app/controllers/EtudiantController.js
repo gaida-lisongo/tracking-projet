@@ -1,4 +1,4 @@
-import Controller from "./Controller";
+import Controller from "./Controller.js";
 
 class EtudiantController extends Controller {
     constructor() {
@@ -34,6 +34,23 @@ class EtudiantController extends Controller {
         console.log("EtudiantController profile method called");
         // Logique pour afficher le profil de l'étudiant
         // Par exemple, charger les données du profil depuis une API et les afficher dans une vue
+    }
+
+    listActivities() {
+        console.log("EtudiantController listActivities method called");
+        // Logique pour afficher la liste des activités
+    }
+
+    showActivity(...params) {
+        console.log("EtudiantController showActivity method called with params:", params);
+        // Logique pour afficher une activité spécifique
+        // params[0] = ID de l'activité
+    }
+
+    submitWork(...params) {
+        console.log("EtudiantController submitWork method called with params:", params);
+        // Logique pour soumettre un travail
+        // params[0] = ID de l'activité, params[1] = ID du chapitre
     }
 
     // Méthodes spécifiques à la gestion des étudiants

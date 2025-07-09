@@ -1,4 +1,4 @@
-import Controller from "./Controller";
+import Controller from "./Controller.js";
 
 class HomeController extends Controller {
     constructor() {
@@ -16,6 +16,21 @@ class HomeController extends Controller {
         console.log("HomeController login method called");
         // Logique pour afficher la page de connexion
         // Par exemple, rediriger vers une page de connexion ou afficher un formulaire
+    }
+
+    dashboard() {
+        console.log("HomeController dashboard method called");
+        // Logique pour afficher le tableau de bord
+    }
+
+    profile() {
+        console.log("HomeController profile method called");
+        // Logique pour afficher le profil utilisateur
+    }
+
+    recharge() {
+        console.log("HomeController recharge method called");
+        // Logique pour la page de recharge de compte
     }
 
     register() {
